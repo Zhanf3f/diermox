@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生产可能性曲线 (PPC) - 资料索引</title>
+    <style>
+        :root {
+            --primary-color: #E8F4F5;
+            --secondary-color: #B4DDE3;
+            --accent-color: #3498db;
+            --text-color: #2C3E50;
+            --light-text: #647380;
+            --white: #FFFFFF;
+            --light-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--white) 100%);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 1rem;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .card-description {
+            color: var(--light-text);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .card-link:hover {
+            background: #2980b9;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .preview-container {
+            margin-top: 2rem;
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .preview-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .preview-image {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>生产可能性曲线 (PPC)</h1>
+            <p class="subtitle">经济学第二模型学习资料索引</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="preview-container">
+            <h2 class="preview-title">最新生成的生产可能性曲线图</h2>
+            <img src="生产可能性曲线_PPC.png" alt="生产可能性曲线图" class="preview-image">
+            <p>使用Python和Matplotlib生成的生产可能性曲线图，展示了比萨和机器人两种商品的生产可能性组合。</p>
+        </div>
+
+        <h2 class="section-title">学习资料</h2>
+        <div class="resources">
+            <div class="resource-card">
+                <img src="ppc-curve.svg" alt="基本生产可能性曲线" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">生产可能性曲线详解</h3>
+                    <p class="card-description">全面解释生产可能性曲线的概念、假设、特点、机会成本关系以及影响因素。</p>
+                    <a href="ppc-explanation.html" class="card-link">查看详情</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <img src="ppc-shifts.svg" alt="生产可能性曲线移动" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">生产可能性曲线的移动</h3>
+                    <p class="card-description">解释经济增长、衰退和技术进步如何影响生产可能性曲线的移动。</p>
+                    <a href="ppc-explanation.html#五、影响生产可能性曲线移动的因素" class="card-link">查看详情</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <img src="opportunity-cost.svg" alt="机会成本递增原理" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">机会成本递增原理</h3>
+                    <p class="card-description">详细解释机会成本递增原理及其在生产可能性曲线中的体现。</p>
+                    <a href="ppc-explanation.html#四、机会成本与生产可能性曲线" class="card-link">查看详情</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">交互式工具</h2>
+        <div class="resources">
+            <div class="resource-card">
+                <div class="card-content">
+                    <h3 class="card-title">动态生产可能性曲线</h3>
+                    <p class="card-description">交互式工具，可以调整曲线参数，模拟不同经济场景下的生产可能性曲线变化。</p>
+                    <a href="dynamic-ppc.html" class="card-link">打开工具</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="card-content">
+                    <h3 class="card-title">Python可视化代码</h3>
+                    <p class="card-description">使用Python和Matplotlib绘制生产可能性曲线的代码示例。</p>
+                    <a href="ppc_visualization.py" class="card-link">查看代码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 经济学学习资料 | 生产可能性曲线模型</p>
+        </div>
+    </footer>
+</body>
+</html>
